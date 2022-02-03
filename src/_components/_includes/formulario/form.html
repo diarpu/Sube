@@ -1,0 +1,73 @@
+<form id="form-contact" action="dist/plugins/php/submit.php" method="POST" class="shape-holder">
+    <div class="hero-form">
+        <div class="row">
+            <div class="col-6 p-i form-group from-group--with-label">
+                <label for="selectSize" class="form-label">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" id="inputEmail1" required
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" minlength="7" maxlength="40"
+                    placeholder="Mediar Centro de Conciliación">
+            </div>
+            <div class="col-6 p-i form-group from-group--with-label last">
+                <label for="selectSize" class="form-label">Correo</label>
+                <input type="email" name="email" id="email" class="form-control" id="inputName1"
+                    placeholder="ejemplo@gmail.com" required autocomplete="off"
+                    pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                    minlength="13" maxlength="55">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 p-i form-group from-group--with-label">
+                <label for="selectSize" class="form-label">Celular</label>
+                <input type="tel" name="phone" id="phone" class="form-control" id="inputName1"
+                    placeholder="+5198765432" required autocomplete="off" minlength="5" maxlength="16">
+            </div>
+
+            <div class="col-6 p-i form-group from-group--with-label">
+                <label for="selectSize" class="form-label">Ciudad</label>
+                <select class="form-control" name="ciudad" required>
+                    <option value="" disabled selected="selected">Seleccionar *</option>
+                    <option value="Páginas Web | Onepage"></option>
+                    <option value="Páginas Web | A Medida"></option>
+                    <option value="Páginas Web | Servicio"></option>
+                    <option value="Tiendas (ecommerce)"></option>
+                    <option value="Desarrollo de apps"></option>
+                    <option value="Desarrollo de sistemas"></option>
+                    <option value="Conectividad"></option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group from-group--with-label">
+            <label for="selectSize" class="form-label">Asunto</label>
+            <input type="text" name="subject" id="subject" class="form-control" id="inputName1"
+                placeholder="Ingresa un asunto..." required autocomplete="off" minlength="5"
+                maxlength="16">
+        </div>
+        <div class="form-group from-group--with-label">
+            <label for="selectSize" class="form-label">Consulta</label>
+            <input type="text" name="message" id="message" class="form-control" id="inputName1"
+                placeholder="Y tu consulta aquí..." required autocomplete="off" minlength="5"
+                maxlength="16">
+        </div>
+        <div class="check-group">
+            <input type="checkbox" id="check-term" required autocomplete="off">
+            <label for="check-term">Acepto los <a data-fancybox data-src="#terminos">Términos, condiciones así
+                    como las política de privacidad y uso de datos.</a></label>
+        </div>
+        <div class="form-btn">
+            <button id="submit" class="btn-primary"><span>Enviar</span></button>
+        </div>
+        <div id="form-messages">
+        </div>
+    </div>
+
+    <div id="terminos">
+        <h5>Términos y condiciones | Política de privacidad y uso de datos</h5>
+        <ul>
+            <li>El servicio de asesoría legal para materias relacionadas a soluciones extrajudiciales brindado mediante esta plataforma es gratuito, principalmente informativo y busca ayudarlo a clarificar los posibles escenarios legales frente al problema que está atravesando.</li>
+            <li>Dejamos esta plataforma accesible para usted las 24 horas, sin embargo, la asesoría o respuesta a las consultas online puede verse interrumpida sin previo aviso.</li>
+            <li>La información proporcionada es estrictamente confidencial.</li>
+            <li>Sus datos personales serán resguardados en nuestra base de datos (ASOCYA) conforme a la legislación vigente referida a la Privacidad y uso de datos.</li>
+        </ul>
+    </div>
+</form>

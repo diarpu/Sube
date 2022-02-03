@@ -1,0 +1,13 @@
+.lazy-background{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.beneficiarios__container .row,
+#terminos .row{
+    /* --bs-gutter-x: 2rem; */
+    --bs-gutter-y: 2rem;
+}
+
+@import '../index/card.css';

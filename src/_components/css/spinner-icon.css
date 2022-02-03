@@ -1,0 +1,39 @@
+/* SPINNER ICON FORMULARIO */
+.spinner-icon {
+    -webkit-animation: lds-dual-ring 1.4s linear infinite;
+    animation: lds-dual-ring 1.4s linear infinite;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-right-color: transparent;
+    display: block;
+    position: relative;
+}
+
+@-webkit-keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+#form-contact span.spinner-icon {
+    height: 18px;
+    width: 18px
+}
+
+#form-contact button:hover span.spinner-icon {
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff
+}

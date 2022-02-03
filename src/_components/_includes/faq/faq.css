@@ -1,0 +1,90 @@
+/* ACORDEON | FAQ */
+#faq{
+    padding: 50px 30px;
+    min-height: 100vh;
+}
+
+.faq__title{
+    margin-bottom: 30px;
+}
+
+.faq__title h3{
+    font-family: 'Coustard', serif;
+    font-size: calc( 20px + 0.5vw);
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+.faq__title p{
+    font-family: 'Martel', serif;
+    font-size: calc( 13px + 0.2vw);
+}
+
+@media (min-width: 700px){
+    .faq__title{
+        text-align: center;
+    }
+
+    #faq .col-12.col-6-md{
+        padding: 0 18px 18px 18px;
+    }    
+}
+
+#faq .wrapper{
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--first-color);
+    padding: 5px 30px;
+    border-radius: .3em;
+    font-family: 'Martel', serif;
+    font-size: calc( 16px + 0.3vw);
+    transition: .3s;
+    /* box-shadow: 0px 0px 20px rgba(245, 245, 245, 0.219); */
+}
+
+#faq .toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8em;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 0;
+    user-select: none;
+}
+
+#faq .toggle .svg{
+    fill: var(--first-color);
+    transition: all .5s;
+}
+
+#faq .content{
+    position: relative;
+    font-size: .8em;
+    text-align: justify;
+    overflow: hidden;
+    line-height: 25px;
+    height: 0;
+    transition: all 1s;
+}
+
+#faq .content p{
+    font-size: calc( 13px + 0.1vw);
+}
+
+#faq .toggle.faq--active{
+    color: var(--first-color);
+}
+
+#faq .toggle .svg.faq--active{
+    transform: rotate(45deg);
+    fill: var(--first-color);
+}
+
+#faq .wrapper.faq--active{
+    background-color: rgba(0, 163, 68, 0.02);
+}

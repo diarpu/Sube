@@ -1,0 +1,38 @@
+npm i -D parcel
+npm i -D @fullhuman/postcss-purgecss postcss
+npm i -D critical
+
+
+###package.json
+
+  "scripts": {
+    "dev": "run-s dev:parcel",
+    "dev:parcel": "parcel src/index.html --public-url ./",
+    "dev:surge": "surge ./dist sube.surge.sh",
+    "build": "run-s build:parcel autoprefixer postcss:surge critical google-closure-compiler",
+    "build:parcel": "parcel build ./src/index.html --dist-dir ./public/ --public-url ./ --no-source-maps --no-cache --no-content-hash",
+    "build:surge": "run-s build:parcel autoprefixer postcss:surge critical google-closure-compiler surge:build clear:build",
+    "surge:build": "surge ./public sube.surge.sh",
+    "critical": "node critical.js",
+    "clear:build": "rimraf ./public",
+    "clear:dev": "rimraf ./dist",
+    "autoprefixer": "npx postcss ./public/*.css --use autoprefixer -d public/",
+    "surge:teardown": "surge teardown sube.surge.sh",
+    "postcss:surge": "npx postcss ./public/index.0a35224b.css --output ./public/index.0a35224b.css",
+    "google-closure-compiler": "npx google-closure-compiler --compilation_level BUNDLE --js public/index.5c36ab83.js --js_output_file public/index.5c36ab83.js"
+  },
+
+
+#### .parcelrc
+{
+    "extends": ["@parcel/config-default"],
+    "transformers": {
+        "*.ico": ["@parcel/transformer-raw"],
+        "*.woff": ["@parcel/transformer-raw"],
+        "*.woff2": ["@parcel/transformer-raw"]
+    },
+    "namers": [ "@mischnic/parcel-namer-preserve-structure"],
+    "optimizers": {
+        "src/*.js": ["parcel-optimizer-license-headers"]
+    }
+}

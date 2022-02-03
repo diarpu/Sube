@@ -1,0 +1,111 @@
+body{
+    font-family: system-ui, ui-sans-serif,  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+@import './_components/css/_grid-includes/_base.css';
+@import './css/bootstrap.css';
+@import './_components/css/button.css';
+@import './_components/_includes/Wa/btn-wa.css';
+
+.hidden{
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.section-title{
+    font-size: calc( 29px + 0.1vw);
+    font-weight: 900;
+}
+
+::selection{
+    background-color: rgba(23, 55, 129, 0.75);
+    color: #fff;
+}
+
+header .btn-primary {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+header .btn-primary span{
+    font-size: 12px;
+}
+
+@import './css/header.css';
+
+.bg-overlay {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.575);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+}
+
+.bg-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+main{
+    background: var(--first-color); /* fallback for old browsers */
+    background: linear-gradient(to right, var(--first-color), var(--first-color-alt));
+    overflow: hidden;
+}
+
+/* MODAL TERMINOS */
+@import '../node_modules/@fancyapps/ui/dist/fancybox.css';
+
+#terminos ul a{
+    color: var(--first-color);
+    font-weight: 500;
+}
+
+.carousel-button:focus{outline: none}
+
+/* Ocultando Informacion Términos */
+#terminos{
+    display: none;
+}
+
+#terminos h5{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#terminos li{
+    list-style: none;
+    font-size: 16px;
+}
+
+#terminos li:not(:last-of-type){
+    margin-bottom: 10px;
+}
+/* END MODAL TERMINOS */
+
+@import './css/query.css';
+/* @import './_components/css/ct.css'; */
+
+.calendly-inline-widget{
+    height: 1230px;
+    overflow: hidden;
+}
+
+@media (min-width: 1111px) {
+    .calendly-inline-widget{
+        height: 800px;
+    }
+    
+}   

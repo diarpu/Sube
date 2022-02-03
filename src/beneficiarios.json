@@ -1,0 +1,34 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "link": "https://cuppriccio.kalp.app",
+            "title": "Cuppriccio",
+            "description": "Cuppriccio ofrece diferentes tipos de postres y pasteles para disfrutar en cualquier momento."
+        },
+        {
+            "id": 2,
+            "link": "https://casaflor.kalp.app",
+            "title": "Casa Flor",
+            "description": "Casa Flor realiza trabajos artísticos con flores; ideales para cumpleaños, aniversarios, condolencias y más."
+        },
+        {
+            "id": 3,
+            "link": "https://housevision.kalp.app",
+            "title": "House Vision",
+            "description": "House Vision trabaja con proyectos inmobiliarios y ayuda a personas a comprar, vender o alquilar alguna propiedad."
+        },
+        {
+            "id": 4,
+            "link": "https://investigacionydesarrollo.kalp.app",
+            "title": "Investigación y Desarrollo",
+            "description": "Investigación y Desarrollo asesora en trabajos de investigación, tesis y planes de negocio."
+        },
+        {
+            "id": 5,
+            "link": "https://gineljeans.kalp.app",
+            "title": "Ginel Jeans",
+            "description": "Ginel Jeans ofrece a su público jeans personalizables con bordados únicos."
+        }
+    ]
+}

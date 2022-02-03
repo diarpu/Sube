@@ -1,0 +1,8 @@
+*::-webkit-scrollbar-track {
+    background: var(--color-lightGrey);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+}
+

@@ -1,0 +1,45 @@
+
+.inicio{
+    background: var(--first-color); /* fallback for old browsers */
+    background: linear-gradient(to right, var(--first-color), var(--first-color-alt));
+    overflow: hidden;
+}
+
+.main__title{
+    font-family: system-ui;
+    color: var(--color-white);
+    line-height: 1.2;
+}
+
+.main__title h1{
+    font-weight: 900;
+    font-size: calc( 26px + 2vw);
+}
+
+.main__title p.mb-3{
+    font-weight: 500;
+    opacity: .9;
+    color: var(--first-color-alt);
+    font-size: calc( 24px + .1vw);
+    line-height: 1.2;
+}
+
+.main__title p{
+    font-weight: 500;
+    opacity: .9;
+    font-size: calc( 18px + .1vw);
+    line-height: 1.5;
+    line-height: 1.3;
+}
+
+/* FORM */
+#form-contact{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.main__form h2{
+    font-size: calc( 22px + .1vw);
+    text-align: center;
+}

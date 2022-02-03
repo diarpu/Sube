@@ -1,0 +1,52 @@
+.btn-top {
+    background-color: var(--first-color);
+    border-radius: 6px;
+    bottom: 38px;
+    display: block;
+    position: fixed;
+    right: 30px;
+    transform: translateX(180px);
+    transition: .7s;
+}
+
+.btn-top:hover {
+    background-color: var(--first-color-alt);
+}
+
+.btn-top svg {
+    fill: #fff;
+    height: 32px!important;
+    padding: 5px;
+    width: 32px!important;
+    display: block;
+}
+
+.go-top {
+    transform: translateX(0)
+}
+
+/* BTN WHATSAPP */
+.btn-wa {
+    background-color: #25d366;
+    border-radius: 50%;
+    bottom: 30px;
+    height: 48px;
+    left: 30px;
+    position: fixed;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wa svg {
+    height: 28px;
+    width: 28px;
+}
+
+@media (min-width: 600px) {
+    .btn-wa {
+        bottom: 50px;
+        left: 50px
+    }
+}

@@ -1,0 +1,47 @@
+@media (max-width: 360px){
+    header .btn-primary{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .inicio{
+        background: var(--first-color); /* fallback for old browsers */
+    }
+
+    header .btn-primary:nth-of-type(1){
+        background-color: #fff;
+    }
+
+    header .btn-primary:nth-of-type(1) span{
+        color: var(--first-color);
+    }
+
+    header .btn-primary:nth-of-type(1):hover span{
+        color: #fff;
+    }
+
+    header .nav__toggle{
+        fill: #fff;
+    }
+
+    header.header-sticky{
+        background-color: var(--first-color);
+    }
+
+    .header-sticky .header__container .nav__logo{
+        color: #fff;
+    }
+/* 
+    .header-sticky .btn-primary:nth-of-type(1){
+        background-color: var(--first-color);
+    }
+
+    .header-sticky .btn-primary:nth-of-type(1) span{
+        color: #fff;
+    }
+
+    .header-sticky .nav__toggle{
+        fill: var(--first-color);
+    } */
+}
